@@ -1,4 +1,18 @@
 Tasks::Application.routes.draw do
+  get "tasks/index"
+
+  get "tasks/create"
+
+  get "tasks/new"
+
+  get "tasks/update"
+
+  get "tasks/edit"
+
+  get "tasks/show"
+
+  get "tasks/destroy"
+
 	resources :tasks
   # The priority is based upon order of creation:
   # first created -> highest priority.
