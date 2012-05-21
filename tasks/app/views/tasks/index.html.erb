@@ -1,9 +1,0 @@
-<h1> All tasks </h1>
-<ol>
-	<% @tasks.each do |task| %>
-		<li> <%= task.description %>
-			<%= link_to "Mostrar", task %>
-			<%= link_to "Borrar!", task, :method=>:delete, :confirm=>"Estás seguro?"%>
-		</li>
-	<%end%>
-</ol>			
